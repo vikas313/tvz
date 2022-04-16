@@ -7,7 +7,7 @@ function Loginpage() {
     let [toggle, settoggle] = useState(false)
    useEffect(()=>{
     if(localStorage.getItem('email')&& localStorage.getItem('password')){
-       //settoggle(true);
+       settoggle(true);
     }
    },[toggle])
     return (
